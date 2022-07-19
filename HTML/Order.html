@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<!--Dev Patel, Akshayan Jeyakumar
+January 8, 2019
+Order.html
+Rocky Point Ice Cream
+Ms.Navabi-->
+<html>
+	<head>
+		<title>Rocky Point Ice Cream</title>
+		<link rel="stylesheet" href="Style.css" type="text/css"/>
+		<meta charset="utf-8"/>
+		<meta name="description" content="WWI"/>
+		<meta name="keywords" content="XHTML,CSS"/>
+		<meta name="author" content="Dev Patel"/>
+		<meta name="viewport" content="width=device-width"/>
+		<script>
+			var p=0;
+			var count=0;   
+			//Customer Information (first name)
+			function Information1(fName){
+				var firstName = document.getElementById(fName).value;
+				document.getElementById('FN').innerHTML = firstName;
+			}
+			//Customer Information (last name)
+			function Information2(lName){
+				var lastName = document.getElementById(lName).value;
+				document.getElementById('LN').innerHTML = lastName;
+			}
+			//Customer Information (phone number)
+			function Information3(pNumber){
+				var phoneNumber = document.getElementById(pNumber).value;
+				document.getElementById('PN').innerHTML = phoneNumber;
+			}
+			// Ice-cream size chosen by customer
+			function pickIC(picked){
+				var size = document.getElementById(picked).value;
+				document.getElementById('icsize').innerHTML = size;
+			}
+			//Ice-cream size price
+			function Pricesize(){
+				if(document.getElementById("small").checked == true){
+				p=3.99
+					}
+				if(document.getElementById("medium").checked == true){
+				p=5.25
+					}
+				if(document.getElementById("large").checked == true){
+				p=8.75
+					}
+				if(document.getElementById("larger").checked == true){
+				p=10.00
+					}
+				return p;
+				}
+			//Flavours chosen by customer
+			function flavours(ccount){
+				var flavour1="World Class Chocolate"
+				var flavour2="Vanilla"
+				var flavour3="Rocky Road"
+				var flavour4="Rainbow Sherbet"
+				var flavour5="Cotton Candy"
+				var flavour6="Cookies'N Cream"
+				var flavour7="Chocolate Chip"
+				var flavour8="Mint Chocolate Chip"
+				var flavour9="Strawberry Cheesecake"
+				var flavour10="Mango Tango"
+				var i=11;
+				var ccount = 0;
+				if(document.getElementById(i).checked == true){
+					document.getElementById('flavour01').innerHTML = flavour1;
+					ccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('flavour02').innerHTML = flavour2;
+					ccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('flavour03').innerHTML = flavour3;
+					ccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('flavour04').innerHTML = flavour4;
+					ccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('flavour05').innerHTML = flavour5;
+					ccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('flavour06').innerHTML = flavour6;
+					ccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('flavour07').innerHTML = flavour7;
+					ccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('flavour08').innerHTML = flavour8;
+					ccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('flavour09').innerHTML = flavour9;
+					ccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('flavour10').innerHTML = flavour10;
+					ccount++
+					}
+				i++
+				return ccount;
+			}
+			//Toppings chosen by customer
+			function toppings(){
+				var top1="Whipped Cream"
+				var top2="M&Ms"
+				var top3="Oreo Crumbs"
+				var top4="Cookie Dough"
+				var top5="Sprinkles"
+				var top6="Nuts"
+				var top7="Marshmallows"
+				var top8="Hot Fudge Sauce"
+				var top9="Caramel Sauce"
+				var top10="Strawberry Sauce"
+				var i=1;
+				if(document.getElementById(i).checked == true){
+					document.getElementById('topping01').innerHTML = top1;
+					count++
+				}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('topping02').innerHTML = top2;
+					count++
+				}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('topping03').innerHTML = top3;
+					count++
+				}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('topping04').innerHTML = top4;
+					count++
+				}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('topping05').innerHTML = top5;
+					count++
+				}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('topping06').innerHTML = top6;
+					count++
+				}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('topping07').innerHTML = top7;
+					count++
+				}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('topping08').innerHTML = top8;
+					count++
+				}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('topping09').innerHTML = top9;
+					count++
+				}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('topping010').innerHTML = top10;
+					count++
+				}
+				i++
+				count=(0.75*count);
+				return count;
+			}
+			//Cone/cup chosen bt customer
+			function cones(cccount){
+				var cone1="Cup"
+				var cone2="Wafer Cones"
+				var cone3="Waffle Cones"
+				var cone4="Sugar Cones"
+				var cone5="Chocolate-Dipped Cones"
+				var i=21;
+				var cccount=0;
+				if(document.getElementById(i).checked == true){
+					document.getElementById('cone01').innerHTML = cone1;
+					cccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('cone02').innerHTML = cone2;
+					cccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('cone03').innerHTML = cone3;
+					cccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('cone04').innerHTML = cone4;
+					cccount++
+					}
+				i++
+				if(document.getElementById(i).checked == true){
+					document.getElementById('cone05').innerHTML = cone5;
+					cccount++
+					}
+				i++
+				return cccount;
+				}
+				// Total price of customers order
+				function totalPrice(){
+					var toppingPrice = toppings();
+					var sizePrice = Pricesize();
+					var subTotal = ((toppingPrice) + (sizePrice));
+					var total = (subTotal*1.13);
+					alert("your total price is $"+total.toFixed(2));
+					document.getElementById("t").value= "$"+total.toFixed(2);
+				}
+				// Greeting and payment confirmation for the purchase
+				function greetings() {
+					var greeting;
+					var time = new Date().getHours();
+					if (time < 10) {
+						greeting = "Have a n<b><i>ICE</i></b> morning, you will recieve your order in about 10-15 minutes";
+					} else if (time < 20) {
+						greeting = "Have a n<b><i>ICE</i></b> day, you will recieve your order in about 10-15 minutes";
+					} else {
+						greeting = "Have a n<b><i>ICE</i></b> evening, you will recieve your order in about 10-15 minutes";
+					}
+					document.getElementById("day").innerHTML = greeting;
+				}
+		</script>
+	</head>
+	<body>
+		<br/>
+		<img src="logo.jpg" class="logo">
+		<ul class="head">
+			<li class="heading"><a class="active" href="Order.html"><b>ORDER NOW</b></a></li>
+			<li class="heading"><a href="IceCream.html"><b>ICE CREAMS</b></a></li>
+			<li class="heading"><a href="about.html"><b>ABOUT</b></a></li>
+			<li class="heading"><a href="Index.html"><b>HOME</b></a></li>
+		</ul>
+		<br/>
+		<h3>Please Enter The Following Information Down Below</h3>
+		<hr/>
+		<form action="/action_page.php">
+		<p>First Name: <input type="text" name="firstName" id="firstName">
+		<input type ="button" onclick="Information1('firstName')" value = "Enter"></button>
+		<p>Last Name: <input type="text" name="lastName" id="lastName">
+		<input type ="button" onclick="Information2('lastName')" value = "Enter"></button>
+		<p>Phone Number: <input type="text" name="phoneNumber" id="phoneNumber">
+		<input type ="button" onclick="Information3('phoneNumber')" value = "Enter"></button>
+		<p>Credit Card Number: <input type="text" name="ccn" maxlength="16"></p>
+		<p>CVC: <input type="password" name="cvc" maxlength="3"></p>
+		</form>
+		<button type="button" onclick="alert('Your Information Has Been Recieved')">Submit Information</button></br>
+		<div style=" width:20%; float: left;"><fieldset>
+		<legend>Ice-Cream Sizes</legend>
+		<form action="">
+		<h3>Pick your size:</h3>
+	    <input type="radio" name="size" id="small" value="Kids Scoop" onclick="pickIC('small')">Kids Scoop - $3.99<br />
+		<input type="radio" name="size" id="medium" value="Single Scoop" onclick="pickIC('medium')">Single Scoop - $5.25<br />
+		<input type="radio" name="size" id="large" value="Double Scoop" onclick="pickIC('large')">Double Scoop - $8.75<br />
+		<input type="radio" name="size" id="larger" value="Triple Scoop" onclick="pickIC('larger')">Triple Scoop - $10.00<br />
+		</form>
+		<input type ="button" onclick="alert('Your Size Has Been Selected')"value = "Enter my Ice-Cream size" ></button></fieldset>
+		</div>
+		</fieldset></div>
+		<div style="width: 25%; float: left;"><fieldset>
+		<legend>Flavours</legend>
+		<form action="">
+		<h3>Pick Your Flavour</h3>
+		<input type="radio" name="flavour" id="11" value="World Class Chocolate">World Class Chocolate<br/>
+		<input type="radio" name="flavour" id="12" value="Vanilla">Vanilla<br/>
+		<input type="radio" name="flavour" id="13" value="Rocky Road">Rocky Road<br/>
+		<input type="radio" name="flavour" id="14" value="Rainbow Sherbet">Rainbow Sherbet<br/>
+		<input type="radio" name="flavour" id="15" value="Cotton Candy">Cotton Candy<br/>
+		<input type="radio" name="flavour" id="16" value="Cookies'N Cream">Cookies'N Cream<br/>
+		<input type="radio" name="flavour" id="17" value="Chocolate Chip">Chocolate Chip<br/>
+		<input type="radio" name="flavour" id="18" value="Mint Chocolate Chip">Mint Chocolate Chip<br/>
+		<input type="radio" name="flavour" id="19" value="Strawberry Cheesecake">Strawberry Cheesecake<br/>
+		<input type="radio" name="flavour" id="20" value="Mango Tango">Mango Tango<br/>
+		<input type="reset" value="Clear">
+		</form>
+		<input type ="button" onclick="flavours()"value = "Add To Cart" ></button></fieldset></div>
+		<div style="width: 30%; float: left;"><fieldset><legend>Toppings</legend>
+		<form action="">
+		<h3>Pick your toppings ($0.75 per topping)</h3>
+		<input type="checkbox" name="toppings" id="1" value="Whipped Cream">Whipped Cream<br/>
+		<input type="checkbox" name="toppings" id="2" value="Tomato">M&Ms<br/>
+		<input type="checkbox" name="toppings" id="3" value="Oreo Crumbs">Oreo Crumbs<br/>
+		<input type="checkbox" name="toppings" id="4" value="Cookie Dough">Cookie Dough<br/>
+		<input type="checkbox" name="toppings" id="5" value="Sprinkles">Sprinkles<br/>
+		<input type="checkbox" name="toppings" id="6" value="Nuts">Nuts<br/>
+		<input type="checkbox" name="toppings" id="7" value="Marshmallows">Marshmallows<br/>
+		<input type="checkbox" name="toppings" id="8" value="Hot Fudge Sauce">Hot Fudge Sauce<br/>
+		<input type="checkbox" name="toppings" id="9" value="Caramel Sauce">Caramel Sauce<br/>
+		<input type="checkbox" name="toppings" id="10" value="Strawberry Sauce">Strawberry Sauce<br/>
+		<input type="reset" value="Clear">
+		</form>
+		<input type ="button" onclick="toppings()"value = "Enter my topping selections" ></button></fieldset></div>
+		</div>
+		<div style="width: 23%; float: left;"><fieldset>
+		<legend>Cups/Cones</legend>
+		<form action="">
+		<h3>Pick Your Cup/Cone</h3>
+		<input type="radio" name="cone" id="21" value="Cup">Cup<br/>
+		<input type="radio" name="cone" id="22" value="Wafer Cones">Wafer Cones<br/>
+		<input type="radio" name="cone" id="23" value="Waffle Cones">Waffle Cones<br/>
+		<input type="radio" name="cone" id="24" value="Sugar Cones">Sugar Cones<br/>
+		<input type="radio" name="cone" id="25" value="Chocolate-Dipped Cones">Chocolate-Dipped Cones<br/>
+		<input type="reset" value="Clear">
+		</form>
+		<input type ="button" onclick="cones()"value = "Add To Cart" ></button></fieldset></div>
+		</fieldset></div>
+		<input type ="button" onclick="totalPrice()"value = "Order Now" ></button></fieldset></div>
+		<div style="width: 40%; float: left;"><h3>Receipt:</h3>
+		<p>First Name: <span id = "FN" style="color:#DE5BA7"></span> <br/>
+		Last Name: <span id = "LN"  style="color:#DE5BA7"></span> <br/>
+		Phone Number: <span id = "PN"  style="color:#DE5BA7"></span> <br>
+		Ice Cream: <span id = "flavour01" style="color:#DE5BA7"></span> 
+					<span id = "flavour02" style="color:#DE5BA7"></span>
+					<span id = "flavour03" style="color:#DE5BA7"></span>
+					<span id = "flavour04" style="color:#DE5BA7"></span>
+					<span id = "flavour05" style="color:#DE5BA7"></span>
+					<span id = "flavour06" style="color:#DE5BA7"></span>
+					<span id = "flavour07" style="color:#DE5BA7"></span>
+					<span id = "flavour08" style="color:#DE5BA7"></span>
+					<span id = "flavour09" style="color:#DE5BA7"></span>
+					<span id = "flavour10" style="color:#DE5BA7"></span></br>
+		Ice Cream Size: <span id = "icsize" style="color:#DE5BA7"></span> <br/>
+		Toppings/Sauces: <span id = "topping01" style="color:#DE5BA7"></span> 
+					<span id = "topping02" style="color:#DE5BA7"></span>
+					<span id = "topping03" style="color:#DE5BA7"></span>
+					<span id = "topping04" style="color:#DE5BA7"></span>
+					<span id = "topping05" style="color:#DE5BA7"></span>
+					<span id = "topping06" style="color:#DE5BA7"></span>
+					<span id = "topping07" style="color:#DE5BA7"></span>
+					<span id = "topping08" style="color:#DE5BA7"></span>
+					<span id = "topping09" style="color:#DE5BA7"></span>
+					<span id = "topping010" style="color:#DE5BA7"></span></br>
+		Cup/Cone: <span id = "cone01" style="color:#DE5BA7"></span> 
+					<span id = "cone02" style="color:#DE5BA7"></span>
+					<span id = "cone03" style="color:#DE5BA7"></span>
+					<span id = "cone04" style="color:#DE5BA7"></span>
+					<span id = "cone05" style="color:#DE5BA7"></span></br>
+		Total: <input type="text" name="" id="t" value=""></input></p></div>
+		<div style="width: 40%; float: left;"><h3>Comments:</h3>
+		<textarea name = "pizzaorder" id = "pizza" rows = "5" cols = "60">Add any comments or instructions here:</textarea> </div><div style="clear:both;"></div>
+		<button onclick="greetings()">Done</button>
+		<p id="day"></p>
+		<div class="footer">
+			<ul class="social-icons">
+				<li><a href="http://www.facebook.com" target="_blank"><img src="facebook.png"/></a></li>
+				<li><a href="http://www.twitter.com" target="_blank"><img src="twitter.png"/></a></li>
+				<li><a href="http://www.google.com" target="_blank"><img src="google.png"/></a></li>
+				<li><a href="http://www.snapchat.com" target="_blank"><img src="snapchat.png"/></a></li>
+				<li><a href="http://www.instagram.com" target="_blank"><img src="instagram.png"/></a></li>
+				<li><a href="http://www.skype.com" target="_blank"><img src="skype.png"/></a></li>
+				<li><a href="http://www.youtube.com" target="_blank"><img src="youtube.png"/></a></li>
+			</ul>
+			<footer>
+				<p class="copyright">&copy;DP Rocky Point Ice Cream ALL RIGHTS RESERVED</p>
+			</footer>
+		</div>
+	</body>
+</html>
